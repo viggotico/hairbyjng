@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titlen på siden -->
+    <title>Forside | Hair by J&G</title>
+    <!-- Ikonet på hjemmesiden -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- CSS filen -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar mobil -->
+    <a href="../" id="nav-logo-mobile"><img src="../img/logo-black.svg" alt="logo"></a>
+    <div id="nav-toggle-wrapper">
+        <div id="nav-toggle" class="nav-toggle flex-column">
+            <div class="nav-toggle-div nav-active"></div>
+            <div class="nav-toggle-div nav-active"></div>
+            <div class="nav-toggle-div nav-active"></div>
+            <img src="../img/close-icon.svg" class="nav-toggle-img" alt="close-icon">
+        </div>
+    </div>
+
+    <!-- Navbar generelt -->
+    <nav id="nav" class="flex-row-space-between nav-homepage">
+        <a href="../">
+            <img class="logo" src="../img/logo-black.svg" alt="logo">
+        </a>
+        <ul class="flex-row">
+            <li><a href="../">Forside</a></li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../styles">
+                    Styles
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../styles#style-extensions">Extensions</a>
+                        <a href="../styles#style-wigs">Wigs</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../index.html#lookbook">Look Book</a></li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../priser">
+                    Priser
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../prices#wig-install">Wig install</a>
+                        <a href="../prices#re-install">Re-install</a>
+                        <a href="../prices#wig-revive">Wig revive</a>
+                        <a href="../prices#sew-in">Sew-in</a>
+                        <a href="../prices#custom-wig">Custom wig</a>
+                    </div>
+                </div>
+            </li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../about">
+                    Om os
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../about#faq">FAQ</a>
+                        <a href="../about#testimonials">Anbefalinger</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../contact">Kontakt</a></li>
+            <li>
+                <a href="../booking">
+                    <button class="booking-button">
+                        Book tid
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sektioner -->
+    <section class="section flex-column price-list-section" style="padding-top: 60px;">
+        <h4>Prisliste</h4>
+        <div id="wig-install" class="flex-column price-list">
+            <div class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Wig install eksl. hår</p>
+                    <span>(Closure/Frontal)</span>
+                </div>
+                <div class="flex-column">
+                    <p>600/700 DKK</p>
+                </div>
+            </div>
+            <div id="re-install" class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Re-install</p>
+                    <!-- <span>Description</span> -->
+                </div>
+                <div class="flex-column">
+                    <p>400/500 DKK</p>
+                </div>
+            </div>
+            <div id="wig-revive" class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Wig revive</p>
+                    <!-- <span>Description</span> -->
+                </div>
+                <div class="flex-column">
+                    <p>350 DKK</p>
+                </div>
+            </div>
+            <div id="sew-in" class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Sew-in eksl. hår</p>
+                    <!-- <span>Description</span> -->
+                </div>
+                <div class="flex-column">
+                    <p>550 DKK</p>
+                </div>
+            </div>
+            <div id="custom-wig" class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Custom made wig</p>
+                    <span>(Frontal: Bleach, Plucking, Styling)</span>
+                </div>
+                <div class="flex-column">
+                    <p>900 DKK</p>
+                </div>
+            </div>
+            <div id="custom-wig-2" class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Custom made wig</p>
+                    <span>(Closure: Bleach, Plucking, Styling)</span>
+                </div>
+                <div class="flex-column">
+                    <p>700 DKK</p>
+                </div>
+            </div>
+        </div>
+        <span>10% Studierabat</span>
+        <div class="gallery-button-wrapper">
+            <a href="../booking">
+                <button>Book Nu</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="section flex-column price-list-section">
+        <h4>Depositum & forsinkelses udgifter</h4>
+        <div id="wig-installs" class="flex-column price-list">
+            <div class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Booking forsinkelses udgifter</p>
+                    <span>(4 dage eller mindre)</span>
+                </div>
+                <div class="flex-column">
+                    <p>100 DKK</p>
+                </div>
+            </div>
+            <div class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Forsinkelse til din aftale</p>
+                    <span>(10 minutter)</span>
+                </div>
+                <div class="flex-column">
+                    <p>50 DKK</p>
+                </div>
+            </div>
+            <div class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Forsinkelse til din aftale</p>
+                    <span>(15 minutter)</span>
+                </div>
+                <div class="flex-column">
+                    <p>100 DKK</p>
+                </div>
+            </div>
+            <div class="flex-row-space-between price-list-item">
+                <div class="flex-column">
+                    <p>Forsinkelse til din aftale</p>
+                    <span>(20 minutter)</span>
+                </div>
+                <div class="flex-column">
+                    <p>Aflyst aftale</p>
+                </div>
+            </div>
+        </div>
+        <div class="price-list-additional-info">
+            <p>Depositummet er halvdelen af serviceprisen, som betales ved booking af en aftale hos os. Din aftale er ikke bekræftet, hvis depositummet ikke er betalt.</p>
+            <br>
+            <p>Hvis en aftale aflyses mindre end 24 timer før, refunderes depositummet ikke. Dette gælder også ved udeblivelse og forsinkelser på mere end 20 minutter.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section flex-column">
+        <a href="../">
+            <img class="footer-logo" src="../img/logo-white.svg" alt="logo">
+        </a>
+        <ul class="footer-group flex-row">
+            <li><a href="../styles">Styles</a></li>
+            <li><a href="../index.html#lookbook">Look Book</a></li>
+            <li><a href="../prices">Priser</a></li>
+            <li><a href="../contact">Kontakt Os</a></li>
+        </ul>
+        <div class="button-group button-group-invert flex-row">
+            <a href="https://www.instagram.com/hairby.jng" target="_blank">
+                <button class="button-white flex-row">
+                    <img src="../img/instagram.svg" alt="instagram">
+                    Instagram
+                </button>
+            </a>
+            <a href="../booking">
+                <button class="button-white">Book Tid</button>
+            </a>
+        </div>
+        <span>© 2025 Hair by J & G</span>
+    </footer>
+
+    <!-- JavaScript filer -->
+    <script src="../js/navToggle.js"></script>
+</body>
+
+</html>

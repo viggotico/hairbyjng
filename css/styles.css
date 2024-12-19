@@ -1,0 +1,774 @@
+/* Importerer logo */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* CSS variabler */
+:root {
+    --text: rgb(50, 50, 50);
+    --text-light: white;
+    --link: gray;
+    --background: white;
+    --main-color: rgb(50, 50, 50);
+    --padding: 30px;
+    --padding-short: 15px;
+    --width: calc(100% - (var(--padding) * 2));
+    --width-short: calc(100% - (var(--padding-short) * 2));
+}
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Font styling */
+body {
+    font-size: 3vw;
+    font-family: "Inria Serif", serif;
+    font-optical-sizing: auto;
+    color: var(--text);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Link styling  */
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--text);
+}
+
+/* Tekst styling */
+p, span {
+    font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Bodoni Moda", serif;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.7em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2.3em;
+}
+
+h4 {
+    font-size: 2.1em;
+}
+
+h5 {
+    font-size: 1.9em;
+}
+
+h6 {
+    font-size: 1.7em;
+}
+
+/* Input styling */
+label {
+    width: 70%;
+    max-width: 50vw;
+}
+
+input {
+    width: calc(100% - 30px);
+    padding: var(--padding-short);
+    font-size: 1em;
+    font-family: "Inria Serif", serif;
+    border: solid 2px var(--main-color);
+}
+
+/* Flexbox elementer */
+.flex-row,
+.flex-column,
+.flex-row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row-space-between,
+.flex-column {
+    justify-content: space-between;
+}
+
+/* Knap styling */
+button {
+    min-width: 12vw;
+    padding: 10px 20px;
+    border: solid 2px var(--main-color);
+    font-size: 1em;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: var(--text);
+}
+
+.button-white {
+    color: var(--text-light);
+    border: solid 2px var(--text-light);
+}
+
+button:hover {
+    cursor: pointer;
+    border: solid 2px var(--link);
+    color: var(--link);
+}
+
+.button-group button {
+    gap: 5px;
+}
+
+.button-group button img {
+    width: 2.5vw;
+    height: auto;
+    min-width: 20px;
+}
+
+.button-group-invert button img {
+    filter: invert(1);
+}
+
+.button-group-invert button:hover img {
+    filter: invert(0.5);
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    transform: translateY(-10%) scale(1.2);
+}
+
+/* Sektion styling */
+.section {
+    width: var(--width);
+    padding: var(--padding) var(--padding) 0 var(--padding);
+    align-items: flex-start;
+}
+
+/* Navbar styling */
+#nav-logo-mobile {
+    display: none;
+    width: 10vw;
+    position: absolute;
+    top: 2vw;
+    left: 2vw;
+    z-index: 100;
+}
+
+#nav-logo-mobile img {
+    width: 100%;
+}
+
+.nav-logo-mobile-invert img {
+    filter: invert(1) drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.nav-logo-mobile-hidden {
+    display: none !important;
+}
+
+#nav-logo-mobile:hover img {
+    opacity: 0.5;
+}
+
+#nav-toggle-wrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-toggle {
+    gap: 0;
+    width: 7vw;
+    height: 7vw;
+    z-index: 100;
+    position: relative;
+    padding: 2vw;
+}
+
+.nav-toggle div {
+    width: 100%;
+    height: 15%;
+    background-color: var(--main-color);
+}
+
+.nav-toggle img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-toggle:hover {
+    cursor: pointer;
+}
+
+.nav-toggle:hover div {
+    background-color: var(--link);
+}
+
+.nav-toggle-invert div {
+    background-color: var(--background);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.nav-toggle-invert:hover div {
+    background-color: var(--background);
+    opacity: 0.5;
+}
+
+nav {
+    width: var(--width);
+    padding: var(--padding-short) var(--padding);
+    position: sticky;
+    z-index: 10;
+    font-family: "Bodoni Moda", serif;
+    letter-spacing: .06em;
+}
+
+.nav-homepage {
+    position: sticky;
+}
+
+nav .logo {
+    width: 8vw;
+    min-width: 60px;
+    background-color: white;
+}
+
+nav .logo:hover {
+    opacity: 0.5;
+}
+
+nav ul {
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--text);
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+nav ul li:hover a {
+    color: var(--text);
+    cursor: pointer;
+}
+
+nav ul li a img {
+    width: .7em;
+    transform: rotateZ(90deg);
+    transition: transform 0.2s ease;
+}
+
+nav ul li:hover a img {
+    transform: rotateZ(0deg);
+    filter: invert(0.5);
+    transition: transform 0.2s ease;
+}
+
+.submenu {
+    display: block !important;
+    transform: translateX(15px);
+    position: absolute;
+    min-height: 30px;
+    width: 100%;
+    transform: translate(-15px, -30px);
+    cursor: pointer;
+}
+
+.submenu div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    background-color: var(--background);
+    margin-top: 30px;
+    width: 8em;
+    padding: 10px 15px;
+    z-index: -1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.submenu div a {
+    display: block;
+    width: 100%;
+}
+
+.submenu div {
+    display: none;
+}
+
+.submenu:hover div {
+    display: flex !important;
+}
+
+.submenu a {
+    color: var(--text);
+}
+
+.submenu a:hover {
+    color: rgb(120, 120, 120);
+}
+
+nav button {
+    color: var(--text);
+    border: solid 2px var(--text);
+}
+
+nav button:hover {
+    color: var(--link);
+    border: solid 2px var(--link);
+    cursor: pointer;
+}
+
+/* Intro sektion styling */
+#intro div,
+#intro article {
+    flex: 1 0 0%;
+}
+
+/* Billed styling */
+.image-group-slim {
+    gap: 0;
+    width: 40%;
+    height: 30vw;
+}
+
+.image-slim {
+    background-position: center center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+}
+
+/* Content tekst */
+.article-left {
+    /* width: 50%; */
+    justify-content: flex-start;
+}
+
+/* Lookbook sektion */
+#lookbook {
+    align-items: flex-start;
+    text-align: left;
+}
+
+/* Galleri */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.gallery-item,
+.gallery-item-text {
+    width: auto;
+    height: 30vw;
+    flex: 1 0 30%;
+    aspect-ratio: 1/1;
+}
+
+.gallery-item-text {
+    height: fit-content;
+    aspect-ratio: unset;
+}
+
+.gallery-item-taller {
+    height: 50vw;
+}
+
+.gallery-item {
+    overflow: hidden;
+    background-color: gray;
+    background-position: center center;
+    background-size: cover;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-item:hover {
+    filter: saturate(0);
+    transform: scale(0.98);
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Prisliste */
+.price-list-section,
+.price-list {
+    align-items: center;
+}
+
+.price-list-section h4 {
+    text-align: center;
+}
+
+.price-list {
+    width: 100%;
+}
+
+.price-list-item {
+    width: 80%;
+    padding-bottom: var(--padding-short);
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+
+.price-list-item div {
+    gap: 0;
+    width: 40%;
+}
+
+.price-list-item div p {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.price-list-item div span {
+    font-style: italic;
+    font-size: .7em;
+}
+
+.price-list-additional-info {
+    width: 70%;
+}
+
+.price-list-additional-info p {
+    text-align: center;
+}
+
+/* Kontakt sektion */
+.contact-section {
+    align-items: center;
+}
+
+.contact-section-info {
+    width: 70%;
+    text-align: center;
+}
+
+/* Booking sektion */
+.booking-section {
+    align-items: center;
+}
+
+.booking-section-info {
+    width: 70%;
+    text-align: center;
+    font-style: italic;
+}
+
+.booking-section-times {
+    width: 100%;
+}
+
+.booking-section-times-item {
+    padding: var(--padding-short);
+    background-color: var(--main-color);
+    width: 11.5vw;
+    height: 4.5vw;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+}
+
+.booking-section-times-item:hover {
+    background-color: var(--link);
+    cursor: pointer;
+}
+
+.booking-section-times-item p {
+    color: var(--text-light);
+    text-align: center;
+}
+
+.booking-section-times-item-selected {
+    background-color: rgb(59, 90, 158);
+}
+
+.booking-section-times-item-selected:hover {
+    background-color: rgb(48, 101, 206);
+}
+
+#book-info-after {
+    display: none;
+}
+
+.book-info-after-show {
+    display: block !important;
+}
+
+.booking-hide {
+    display: none;
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--main-color);
+    color: var(--text-light);
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: var(--padding);
+    padding: var(--padding) !important;
+    gap: 40px !important;
+}
+
+.footer-logo {
+    width: 6vw;
+    height: auto;
+    min-width: 70px;
+}
+
+.footer-logo:hover {
+    opacity: 0.5;
+}
+
+footer span {
+    font-size: .45em;
+    opacity: 0.5;
+}
+
+.footer-group {
+    list-style: none;
+    align-items: flex-start;
+}
+
+.footer-group li a {
+    color: var(--text-light);
+}
+
+.footer-group li a:hover {
+    color: var(--link);
+}
+
+/* Media queries til responsiveness */
+@media (min-width: 1200px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .hero video {
+        transform: translateY(0) scale(1.2);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    p, span {
+        font-size: .9em
+    }
+
+    .section {
+        padding: var(--padding) var(--padding-short);
+        width: var(--width-short);
+    }
+
+    .nav-homepage {
+        padding: var(--padding) 0;
+        width: 100vw;
+    }
+    
+    #nav-toggle-wrapper {
+        display: block;
+    }
+
+    #nav-logo-mobile {
+        display: block;
+    }
+
+    nav {
+        display: none !important;
+    }
+    
+    nav,
+    .nav-homepage {
+        background-color: var(--background);
+        position: absolute;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    nav,
+    .nav-homepage,
+    nav ul {
+        flex-direction: column !important;
+        width: 100vw;
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+    nav .logo {
+        width: 20vw;
+    }
+
+    nav button {
+        color: var(--text);
+        border: solid 2px var(--text);
+    }
+    
+    nav button:hover {
+        color: var(--link);
+        border: solid 2px var(--link);
+        cursor: pointer;
+    }
+
+    nav ul li {
+        width: 100vw;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+        color: var(--text);
+    }
+
+    nav ul li a img,
+    nav ul li a img:hover {
+        filter: unset;
+    }
+
+    .submenu {
+        display: none !important;
+        width: 100%;
+    }
+
+    /* nav ul li:hover div {
+        display: flex !important;
+    } */
+
+    .submenu {
+        position: relative;
+        transform: none;
+        cursor: default;
+    }
+
+    .submenu div {
+        margin-top: 0;
+        width: calc(100% - 15px);
+        align-items: center;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        z-index: 1;
+    }
+
+    .submenu div a {
+        width: fit-content;
+        cursor: pointer;
+    }
+
+    .nav-toggle-div,
+    .nav-toggle-img {
+        display: none !important;
+    }
+
+    .nav-active {
+        display: flex !important;
+    }
+
+    #intro div,
+    #intro article {
+        flex: 1 0 50%;
+    }
+
+    .gallery-item,
+    .gallery-item-text {
+        height: 70vw;
+        flex: 1 0 40%;
+    }
+
+    .gallery-item-text {
+        height: fit-content;
+    }
+
+    .gallery-item-taller {
+        height: 90vw;
+    }
+
+    .price-list-additional-info {
+        width: 85%;
+    }
+
+    .booking-section-times-item {
+        padding: var(--padding);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item,
+    .gallery-item-text {
+        height: 100vw;
+        flex: 1 0 100%;
+    }
+
+    .gallery-item-text {
+        height: fit-content;
+    }
+
+    .gallery-item-mobile {
+        display: none;
+    }
+}
+
+@media (max-aspect-ratio: 4/3.3) {
+    .hero {
+        height: fit-content;
+    }
+
+    .hero video {
+        position: relative;
+    }
+
+    footer span {
+        font-size: .75em;
+    }
+}

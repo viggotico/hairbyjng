@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titlen på siden -->
+    <title>Forside | Hair by J&G</title>
+    <!-- Ikonet på hjemmesiden -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- CSS filen -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar mobil -->
+    <a href="../" id="nav-logo-mobile"><img src="../img/logo-black.svg" alt="logo"></a>
+    <div id="nav-toggle-wrapper">
+        <div id="nav-toggle" class="nav-toggle flex-column">
+            <div class="nav-toggle-div nav-active"></div>
+            <div class="nav-toggle-div nav-active"></div>
+            <div class="nav-toggle-div nav-active"></div>
+            <img src="../img/close-icon.svg" class="nav-toggle-img" alt="close-icon">
+        </div>
+    </div>
+
+    <!-- Navbar generelt -->
+    <nav id="nav" class="flex-row-space-between nav-homepage">
+        <a href="../">
+            <img class="logo" src="../img/logo-black.svg" alt="logo">
+        </a>
+        <ul class="flex-row">
+            <li><a href="../">Forside</a></li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../styles">
+                    Styles
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../styles#style-extensions">Extensions</a>
+                        <a href="../styles#style-wigs">Wigs</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../index.html#lookbook">Look Book</a></li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../priser">
+                    Priser
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../prices#wig-install">Wig install</a>
+                        <a href="../prices#re-install">Re-install</a>
+                        <a href="../prices#wig-revive">Wig revive</a>
+                        <a href="../prices#sew-in">Sew-in</a>
+                        <a href="../prices#custom-wig">Custom wig</a>
+                    </div>
+                </div>
+            </li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../about">
+                    Om os
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../about#faq">FAQ</a>
+                        <a href="../about#testimonials">Anbefalinger</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../contact">Kontakt</a></li>
+            <li>
+                <a href="../booking">
+                    <button class="booking-button">
+                        Book tid
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sektioner -->
+    <section class="section flex-column" style="padding-top: 60px;">
+        <div class="gallery">
+            <div class="gallery-item-text">
+                <h4 id="style-extensions">Extensions</h4>
+                Når du kommer til mig for at få lavet extensions, kan du forvente en personlig og afslappet oplevelse i mit hjem. Jeg går op i, at du føler dig komfortabel og hørt, så vi starter altid med en snak om dine ønsker og forventninger. Jeg arbejder hurtigt og effektivt, så du ikke skal bruge hele dagen, men uden at gå på kompromis med kvaliteten. Du forlader min stol med smukke, naturlige extensions, der fremhæver din stil og giver dig den selvtillid, du fortjener!
+            </div>
+            <div class="gallery-item gallery-item-taller" style="background-image: url('../img/lookbook/hairby.jng_9.jpg');"></div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item gallery-item-taller" style="background-image: url('../img/lookbook/hairby.jng_7.jpg');"></div>
+            <div class="gallery-item-text">
+                <h4 id="style-wigs">Wigs</h4>
+                Når du kommer til mig for at få en wig, får du en personlig oplevelse fra start til slut. Vi finder sammen den perfekte wig, der passer til din stil og personlighed. Jeg sørger for, at den sidder naturligt og komfortabelt, så du føler dig smuk og selvsikker. Behandlingen er hurtig, og kvaliteten er altid i top – du går herfra med et smil og en wig, der ser fantastisk ud og føles som en del af dig!
+            </div>
+        </div>
+        <div class="gallery-button-wrapper">
+            <a href="../booking">
+                <button>Book Nu</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section flex-column">
+        <a href="../">
+            <img class="footer-logo" src="../img/logo-white.svg" alt="logo">
+        </a>
+        <ul class="footer-group flex-row">
+            <li><a href="../styles">Styles</a></li>
+            <li><a href="../index.html#lookbook">Look Book</a></li>
+            <li><a href="../prices">Priser</a></li>
+            <li><a href="../contact">Kontakt Os</a></li>
+        </ul>
+        <div class="button-group button-group-invert flex-row">
+            <a href="https://www.instagram.com/hairby.jng" target="_blank">
+                <button class="button-white flex-row">
+                    <img src="../img/instagram.svg" alt="instagram">
+                    Instagram
+                </button>
+            </a>
+            <a href="../booking">
+                <button class="button-white">Book Tid</button>
+            </a>
+        </div>
+        <span>© 2025 Hair by J & G</span>
+    </footer>
+
+    <!-- JavaScript filer -->
+    <script src="../js/navToggle.js"></script>
+</body>
+
+</html>

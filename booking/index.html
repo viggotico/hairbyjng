@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titlen på siden -->
+    <title>Forside | Hair by J&G</title>
+    <!-- Ikonet på hjemmesiden -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <!-- CSS filen -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar mobil -->
+    <a href="../" id="nav-logo-mobile"><img src="../img/logo-black.svg" alt="logo"></a>
+    <div id="nav-toggle-wrapper">
+        <div id="nav-toggle" class="nav-toggle flex-column">
+            <div class="nav-toggle-div nav-active"></div>
+            <div class="nav-toggle-div nav-active"></div>
+            <div class="nav-toggle-div nav-active"></div>
+            <img src="../img/close-icon.svg" class="nav-toggle-img" alt="close-icon">
+        </div>
+    </div>
+
+    <!-- Navbar generelt -->
+    <nav id="nav" class="flex-row-space-between nav-homepage">
+        <a href="../">
+            <img class="logo" src="../img/logo-black.svg" alt="logo">
+        </a>
+        <ul class="flex-row">
+            <li><a href="../">Forside</a></li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../styles">
+                    Styles
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../styles#style-extensions">Extensions</a>
+                        <a href="../styles#style-wigs">Wigs</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../index.html#lookbook">Look Book</a></li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../priser">
+                    Priser
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../prices#wig-install">Wig install</a>
+                        <a href="../prices#re-install">Re-install</a>
+                        <a href="../prices#wig-revive">Wig revive</a>
+                        <a href="../prices#sew-in">Sew-in</a>
+                        <a href="../prices#custom-wig">Custom wig</a>
+                    </div>
+                </div>
+            </li>
+            <li class="submenu-item">
+                <a class="submenu-link" href="../about">
+                    Om os
+                    <img src="../img/chevron.svg" alt="chevron">
+                </a>
+                <div class="submenu">
+                    <div>
+                        <a href="../about#faq">FAQ</a>
+                        <a href="../about#testimonials">Anbefalinger</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../contact">Kontakt</a></li>
+            <li>
+                <a href="../booking">
+                    <button class="booking-button">
+                        Book tid
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sektioner -->
+    <section class="section flex-column booking-section" style="padding-top: 60px;">
+        <h4>Booking</h4>
+        <p class="booking-section-info booking-input">Book en tid hos os ved at vælge en af de ledige tider. Du får efterfølgende en bekræftelse af din booking på mail. Kontakt os endelig hvis du har spørgsmål.</p>
+        <div class="booking-section-times flex-row booking-input">
+            <div class="flex-column booking-section-times-item">
+                <p><strong>12/12-2025</strong></p>
+                <p>10:30</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>12/12-2025</strong></p>
+                <p>10:30</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>12/12-2025</strong></p>
+                <p>10:30</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>12/12-2025</strong></p>
+                <p>10:30</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>12/12-2025</strong></p>
+                <p>10:30</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>08/01-2025</strong></p>
+                <p>10:30</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>09/01-2025</strong></p>
+                <p>11:00</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>18/01-2025</strong></p>
+                <p>16:00</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>04/02-2025</strong></p>
+                <p>15:00</p>
+            </div>
+            <div class="flex-column booking-section-times-item">
+                <p><strong>15/02-2025</strong></p>
+                <p>10:00</p>
+            </div>
+        </div>
+        <label for="booking-email" class="booking-input">
+            Email
+            <input id="booking-email" type="email" name="email">
+        </label>
+        <label for="booking-message" class="booking-input">
+            Besked
+            <input id="booking-message" type="text" name="message">
+        </label>
+        <p id="book-info-after">Tak for din booking!</p>
+        <button id="book-button">Book</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section flex-column">
+        <a href="../">
+            <img class="footer-logo" src="../img/logo-white.svg" alt="logo">
+        </a>
+        <ul class="footer-group flex-row">
+            <li><a href="../styles">Styles</a></li>
+            <li><a href="../index.html#lookbook">Look Book</a></li>
+            <li><a href="../prices">Priser</a></li>
+            <li><a href="../contact">Kontakt Os</a></li>
+        </ul>
+        <div class="button-group button-group-invert flex-row">
+            <a href="https://www.instagram.com/hairby.jng" target="_blank">
+                <button class="button-white flex-row">
+                    <img src="../img/instagram.svg" alt="instagram">
+                    Instagram
+                </button>
+            </a>
+            <a href="../booking">
+                <button class="button-white">Book Tid</button>
+            </a>
+        </div>
+        <span>© 2025 Hair by J & G</span>
+    </footer>
+
+    <!-- JavaScript filer -->
+    <script src="../js/navToggle.js"></script>
+    <script src="../js/booking.js"></script>
+</body>
+
+</html>
