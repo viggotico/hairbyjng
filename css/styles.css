@@ -670,7 +670,7 @@ footer span {
 /* Media queries til responsiveness */
 @media (min-width: 1200px) {
     body {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .hero {
