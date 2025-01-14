@@ -532,8 +532,7 @@ nav button:hover {
     height: 14vw;
     min-width: 120px;
     min-height: 120px;
-    background-position: center center;
-    background-size: cover;
+    background-color: gray;
     border-radius: 50%;
 }
 
