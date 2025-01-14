@@ -12,6 +12,7 @@
     --padding: 30px;
     --padding-short: 15px;
     --width: calc(100% - (var(--padding) * 2));
+    --width-max: 800px;
     --width-short: calc(100% - (var(--padding-short) * 2));
 }
 
@@ -171,8 +172,15 @@ button:hover {
 /* Sektion styling */
 .section {
     width: var(--width);
+    max-width: var(--width-max);
+    margin: 0 auto;
     padding: var(--padding) var(--padding) 0 var(--padding);
     align-items: flex-start;
+}
+
+footer {
+    max-width: unset !important;
+    margin: var(--padding) 0 0 0 !important;
 }
 
 /* Navbar styling */
