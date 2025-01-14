@@ -382,10 +382,17 @@ nav button:hover {
 }
 
 .image-slim {
-    background-position: center center;
-    background-size: cover;
+    overflow: hidden;
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.image-slim video {
+    width: 100%;
+    height: auto;
 }
 
 /* Content tekst */
@@ -430,15 +437,21 @@ nav button:hover {
 .gallery-item {
     overflow: hidden;
     background-color: gray;
-    background-position: center center;
-    background-size: cover;
     transition: filter 0.2s ease, transform 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item:hover {
     filter: saturate(0);
     transform: scale(0.98);
     transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-item video {
+    width: 100%;
+    height: auto;
 }
 
 .gallery-button-wrapper {
