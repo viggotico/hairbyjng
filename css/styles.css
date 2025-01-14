@@ -661,6 +661,7 @@ footer {
     width: 6vw;
     height: auto;
     min-width: 70px;
+    filter: invert(1);
 }
 
 .footer-logo:hover {
