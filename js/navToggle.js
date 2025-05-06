@@ -29,11 +29,26 @@ for (let i = 0; i < navSubMenuLinks?.length; i++) {
     const subMenuItem = navSubMenuLinks?.[i];
     const subMenu = navSubMenus?.[i];
     subMenuItem?.addEventListener('click', (e) => {
-        // tjekker om siden er mobile media query
+        // tjekker om siden er desktop media query
         if (window.innerWidth > 768) return;
         // skifter class navnet "nav-active" mellem aktiv og ikke aktiv
         subMenu?.classList.toggle('nav-active');
         subMenu?.children[0].classList.toggle('nav-active');
+        e?.preventDefault();
+    });
+    // logik til når man trykker på undermenuens hovedpunkt
+    subMenu?.addEventListener('click', (e) => {
+        // tjekker om siden er mobile media query
+        if (window.innerWidth <= 768) return;
+        const children = e.target?.children;
+        const isOnlyHoveredOnFirstItem = Array.from(children).some(el => {
+            return !el.classList.contains('nav-active');
+        });
+        if (!isOnlyHoveredOnFirstItem) return;
+        if (!e.target) return;
+        const linkElement = e.target.parentElement?.firstElementChild;
+        if (linkElement) linkElement.click();
+
         e?.preventDefault();
     });
 }

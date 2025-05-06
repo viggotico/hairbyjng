@@ -4,11 +4,13 @@
 
 /* CSS variabler */
 :root {
-    --text: rgb(50, 50, 50);
-    --text-light: white;
-    --link: gray;
-    --background: white;
-    --main-color: rgb(50, 50, 50);
+    --text: #323232;
+    --text-light: #F7F0EE;
+    --text-dark: #323232;
+    --link: #EDD9C4;
+    --background: #F7F0EE;
+    --main-color: #323232;
+    --main-color-2: #EDD9C4;
     --padding: 30px;
     --padding-short: 15px;
     --width: calc(100% - (var(--padding) * 2));
@@ -27,6 +29,7 @@ body {
     font-size: 3vw;
     font-family: "Inria Serif", serif;
     color: var(--text);
+    background-color: var(--background);
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -270,7 +273,7 @@ nav {
 nav .logo {
     width: 8vw;
     min-width: 60px;
-    background-color: white;
+    background-color: #F7F0EE;
 }
 
 nav .logo:hover {
@@ -447,6 +450,12 @@ nav button:hover {
     justify-content: center;
 }
 
+/* Infographic */
+.infographic-line-break img {
+    width: 80%;
+    padding: 50px 0;
+}
+
 /* FAQ sektion */
 .faq-section {
     align-items: center;
@@ -468,6 +477,7 @@ nav button:hover {
     gap: 0;
     border: solid 2px var(--text);
     padding: var(--padding-short);
+    margin-left: -20px;
 }
 
 .faq-question-wrapper:hover {
@@ -595,7 +605,7 @@ nav button:hover {
 
 .booking-section-times-item {
     padding: var(--padding-short);
-    background-color: var(--main-color);
+    background-color: var(--main-color-2);
     width: 11.5vw;
     height: 4.5vw;
     justify-content: center;
@@ -605,12 +615,12 @@ nav button:hover {
 }
 
 .booking-section-times-item:hover {
-    background-color: var(--link);
+    background-color: var(--background);
     cursor: pointer;
 }
 
 .booking-section-times-item p {
-    color: var(--text-light);
+    color: var(--text-dark);
     text-align: center;
 }
 
